@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Quattrocento&display=swap');
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+    font-size: 18;
+}
+
+img, iframe, video { /*atribuição para ser torna responsivo*/
+    max-width: 100%;
+}
+
+
+body {
+    background-color: #070B0D;
+    font-family: 'Quattrocento', serif;
+}
+
+header {
+    background: #070B0D; 
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: open sans;
+
+    position: sticky;
+    top: 0;
+}
+
+header div {
+    padding: 10px;
+}
+
+header span {
+    border-radius: 2px;
+    color: #070B0D;
+    background: #D7F205;
+}
+
+header div a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+header nav  {
+    padding-top: 15px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav a{
+    color: #D7F205;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.5rem 0.5rem;
+
+    border-radius: 0.3rem;
+    transition: all 0.5s
+}
+
+header nav a:hover {
+    color: #070B0D;
+    background-color: #D7F205; 
+}
+
+
+/*Conteudos para apresentação*/
+
+main, section {
+    background: #D7F205;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /*background: #000;*/
+}
+
+    /*configuração bloco texto*/
+    .texto-destaque {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .texto-destaque h1 {
+      font-size: clamp (1rem, 8vw, 4rem);
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+    .texto-destaque h2 {
+        font-size: clamp(1rem, 4vw, 2rem);
+        padding: 2px 0px;
+    }
+    /*final configuração bloco texto*/
+
+    /*Configuração "menu-contato"*/
+
+    /*redes sociais*/
+    .rede-social {
+        margin: 0 auto;
+        width: 80%;
+        margin-left: -10px;
+    }
+
+    .rede-social nav ul {
+        display: flex;
+        justify-content: baseline;
+    }
+
+    .rede-social nav ul li {
+        margin: 8px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .rede-social nav ul li a img {
+        width: 50px;
+    }
+
+    .rede-social nav ul li a img:hover {
+        transform: scale(1.2);
+        transition: all 0.2s;
+    }
+    /* final Rede sociais*/
+
+    /*Botão de contato*/
+
+    .botao {
+        background: #070B0D;
+        margin: 10px 0 10px;
+        width: 120px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .botao:hover {
+      /*area do click*/
+      transform: scale(1.1);
+      transition: all 0.9s;
+    }
+
+    .botao a {
+        color: #D7F205;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin: 0 auto;
+    }
+
+    /*configuração bloco imagem*/
+    .img-destaque p {
+        margin-bottom: -5px;
+    }
+
+    .img-destaque {
+        width: 100%;
+        margin: 0 10px 0 0;
+    }
+
+/*blocos de conteudos*/
+#infancia {
+    background: #070B0D;    
+    margin: 20px 0;
+    color: #BFBFBF;
+}
+
+#adolescencia {
+    background: #D7F205;
+    margin: 20px 0;
+    color: #070B0D;
+}
+
+#adulto {
+    background: #070B0D;
+    margin: 20px 0;
+    color: #BFBFBF;
+}
+
+#futuro {
+    background: #D7F205;
+    margin: 20px 0;
+    color: #070B0D;
+}
+
+    .fotos  {
+        /* border: 1px solid red; */
+        width: 50%;
+        margin: 10px;
+    }
+
+    .fotos div {
+        width: 100%;
+    }
+
+    .fotos img {
+        width: 95%;
+        margin: 4px;
+        border-radius: 5px;
+    }
+
+    /*Texto */
+    .texto {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 0 20px 0 0;
+        
+    }
+
+    .texto h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #adolescencia h1 {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .texto p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin: 10px;
+        text-align: center;
+        text-align: left;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*redes sociais*/
+    footer nav ul {
+        display: flex;
+    }
+
+    footer nav ul li {
+        margin: 8px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    footer nav ul li a img {
+        width: 50px;
+    }
+
+    footer nav ul li a img:hover {
+        transform: scale(1.2);
+        transition: all 0.2s;
+    }
+    /* final Rede sociais*/
+
+
+@media (min-width: 600px) {
+
+    header nav a {
+        font-size: 1.3rem;
+    }
+
+    .texto-destaque {
+        width: 100%;  
+        margin-left: 10%;
+        padding: 0px;
+    }
+
+    .texto-destaque h1 {
+        font-size: clamp(1rem, 8vw, 5rem)
+    }
+
+    .texto-destaque h2 {
+        font-size: clamp(1rem, 8vw, 2rem)
+    }
+
+    .img-destaque {
+        width: 50%;
+    }
+
+    .rede-social nav ul li a img {
+        width: 70px;
+    }
+
+    .botao {
+        width: 180px;
+        text-align: center;
+    }
+
+    .fotos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .fotos, .texto {
+        width: 85%;
+    }
+
+    .texto p {
+        font-size: 1.5rem;
+        padding: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+
+    .texto h1 {
+        font-size: 3rem;
+    }
+
+    #adolescencia h1 {
+        font-size: 3rem;
+    }
+}
